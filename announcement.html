@@ -33,6 +33,10 @@
                 <li><a href="./announcement.html">Announcements</a></li>
                 <li><a href="./index.html#team">Mentors</a></li>
                 <li><a href="./index.html#contact">Contact</a></li>
+                <li id="nav-li-login"><a href="login.html" class="btn-nav btn-nav-primary">Login</a></li>
+                <li id="nav-li-logout" class="nav-hidden">
+                    <a href="#" id="logout-button" class="btn-nav btn-nav-primary">Logout</a>
+                </li>
             </ul>
             <i class="fas fa-moon" id="theme-toggle"></i>
             <div class="mobile-menu">
@@ -188,11 +192,15 @@
             <p>&copy; 2024 The Mentorship Club. All Rights Reserved. Crafted with passion for mentorship.</p>
         </div>
     </footer>
-
     <button id="scrollToTopBtn" title="Go to top">
-  <i class="fa-solid fa-arrow-up"></i>
-</button>
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+        
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
+    <script src="scripts/main.js"></script>
     <script src="scripts/announcement.js"></script>
     <script src="scripts/scroll.js"></script>
 </body>
